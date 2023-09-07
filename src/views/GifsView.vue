@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-center">Gif Search</h1>
+  <h1 class="text-center">Gifs Search</h1>
   <Search @buscar="getGifs" />
   <Loading v-if="Loading" class="text-warning"/>
   <div class="row">
