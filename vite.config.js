@@ -7,7 +7,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue(),  VitePWA({
     manifest:{
-      name:"Pwa de gif con Vue",
+      name:"Gif_Pwa",
       short_name:"Gif_Pwa",
       description: "Esta es una pagina de gif realizada con vue.js y vite pwa creada por tu papa Abic",
       theme_color: "#333",
