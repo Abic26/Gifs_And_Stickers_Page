@@ -3,17 +3,20 @@
 <div class="conteiner mt-3 text-center">
 <RouterView/>
 </div>
+<ReloadPrompt/>
 </template>
 
 
 <script>
 import { RouterView } from "vue-router";
 import Navbar from "./components/NavBar.vue";
+import ReloadPrompt from "./components/ReloadPrompt.vue";
 
 export default {
   components: {
     Navbar,
-    RouterView
+    RouterView,
+    ReloadPrompt
 }
 }
 </script>
