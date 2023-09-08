@@ -3,6 +3,7 @@
     <Loading v-if="Loading" class="text-info"/>
     <img :src="img" :alt="name">
     <p>{{ name }}</p>
+    <button class="btn btn-success" @click="cargarPagina">Next Gif</button>
   </template>
 
   <script>
@@ -26,6 +27,9 @@ export default {
             this.img = res.data.images.original.url;
             this.name = res.data.title;
             this.Loading=false
+        },
+        cargarPagina(){
+            window.location.reload();
         }
     },
     components: { Loading }
@@ -34,5 +38,10 @@ export default {
 <style>
 img{
     width: 70%;
+}
+@media(max-width: 991px){
+    img{
+    width: 60%;
+}
 }
 </style>
